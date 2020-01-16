@@ -220,7 +220,7 @@
 $(function(){
 
         $("#typed").typed({
-            strings: ["I am Prabhat", "or simply...Developer", "I develop websites", "& turn designs into code",":)"],//Strings to display when typing
+            strings: ["I am Prabhat Kumar Singh", "A keen...Developer", "developing websites is my passion", "know me better."],//Strings to display when typing
             typeSpeed: 50,
             backDelay: 100,
             loop: true,
