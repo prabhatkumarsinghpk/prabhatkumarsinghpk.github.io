@@ -1,0 +1,40 @@
+<!doctype html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>JSON to CSV Converter</title>
+<!-- JSON5 parser -->
+<script src='assets/json5-2.1.0.min.js'></script>
+<!-- jquery, jquery-csv,bootstrap -->
+<script src='assets/jquery-2.1.1.min.js'></script><script src="assets/jquery.csv.js"></script><script src="assets/main.js"></script><link href="assets/bootstrap.min.css" type="text/css" rel="stylesheet" />
+<!-- site styles and JS -->
+<link href="assets/site.css" type="text/css" rel="stylesheet" /><link href="assets/github.css" type="text/css" rel="stylesheet" /><script src="assets/site.js?123456"></script><script src="assets/highlight.pack.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato|Roboto+Slab&display=swap" rel="stylesheet">
+</head>
+<body>
+<section class="json">
+<div class="container"><h1 class="jumbotron" style="font-family: 'Roboto Slab', serif";>Convert JSON to CSV</h1>
+	<div class="row">
+		<div class="col-sm-6"><input type="text" size="40" value="" name="url" id="url" class="form-control text-area-shadow" placeholder="Enter the URL of a web page returning JSON"></div>
+		<div class="col-sm-3"><input type="button" id="btnUrl" class="btn btn-success my-2 mr-2 my-sm-0" value="Fetch JSON" title="Load JSON via URL" onclick="prabhat()"></div>
+		<div class="col-sm-3"><div class="separator">Separator<select name="separator"><option value="comma" selected>Comma</option><option value="tab">Tab</option><option value="semicolon">Semicolon</option></select></div></div>
+	</div>
+
+	<div class="row" style="margin-top:15px;">
+		<div class="col-sm-6"><div class="areas"><textarea id="textarea" class="editing"></textarea><pre class="rendered"><code></code></pre><div class="drop">DROP JSON HERE</div></div></div>
+		<div class="col-sm-6"><section class="csv">
+	  <p style="font-family: 'Lato', sans-serif">
+		<span class="rendered">Below are the first few rows (<span class="rows count"></span> total).<a download="result.csv" href="#" class="download">Download the entire CSV</a>,
+			<span class="show-render-all"><a href="#" class="render-all">show all <span class="rows count"></span> rows</a>,</span>or <a href="#" class="raw">show the raw data</a>.</span>
+		<span class="editing" style="font-family: 'Lato', sans-serif">Your JSON will appear as Table</span>
+	  </p>
+	  <div class="areas"><textarea class="editing" readonly></textarea><div class="table rendered"><table></table></div></div>
+	</section></div>
+	</div>
+</div>
+</section>
+
+
+</body>
+</html>
