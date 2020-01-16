@@ -200,7 +200,7 @@
     }
 
     $.fn.typed.defaults = {
-        strings: ["I am Prabhat", "or simply...Developer", "developing websites is my hobby", "scroll down to know more"],
+        strings: ["I am Prabhat Kumar Singh", "A keen...Developer", "developing websites is my passion", "know me better."],
         // typing and backspacing speed
         typeSpeed: 50, // speed decreases as number increased
         // time before backspacing
