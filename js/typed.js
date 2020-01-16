@@ -200,7 +200,7 @@
     }
 
     $.fn.typed.defaults = {
-        strings: ["I am Sourabh", "or simply...Developer", "developing websites is my hobby", "scroll down to know more"],
+        strings: ["I am Prabhat", "or simply...Developer", "developing websites is my hobby", "scroll down to know more"],
         // typing and backspacing speed
         typeSpeed: 50, // speed decreases as number increased
         // time before backspacing
@@ -220,7 +220,7 @@
 $(function(){
 
         $("#typed").typed({
-            strings: ["I am Sourabh", "or simply...Developer", "I develop websites", "& turn designs into code",":)"],//Strings to display when typing
+            strings: ["I am Prabhat", "or simply...Developer", "I develop websites", "& turn designs into code",":)"],//Strings to display when typing
             typeSpeed: 50,
             backDelay: 100,
             loop: true,
